@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><title>Social Hub | Admin</title>
+  <link rel="stylesheet" href="/style.css"><script src="/admin.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar"><span class="brand">◈ <span>Social Hub</span></span><div class="top-actions"><span class="chip">ADMIN ONLY</span><button id="logout-admin" class="text-button">تسجيل خروج الأدمن</button></div></header>
+    <main class="admin-layout">
+      <section class="heading-block"><span class="eyebrow">ADMIN CONSOLE · DEMO</span><h1>سجل تجارب التسجيل</h1><p>البيانات المعروضة: الاسم التجريبي، عبارة التحدي الوهمية كما أدخلها المشارك، سرعة الاستجابة، التوقيت، ومعرّف الحدث. يتم تحديث الجدول تلقائيًا كل 5 ثوانٍ.</p></section>
+      <section class="admin-summary"><div class="stat-box"><span>إجمالي العمليات المسجلة</span><strong id="total">—</strong></div><div class="stat-box"><span>لعبوا التحدي</span><strong id="finished-count">—</strong></div><div class="stat-box"><span>آخر عملية</span><strong id="latest">—</strong></div></section>
+      <section class="panel"><div class="section-header"><div><span class="section-kicker">DEMO SIGN-INS</span><h2>عمليات التسجيل</h2></div><div class="tools"><button id="refresh" class="outlined-button">تحديث الآن</button><button id="export" class="outlined-button" disabled>تصدير CSV</button><button id="clear" class="danger-button" disabled>مسح السجل</button></div></div><p id="admin-status" class="status" role="status" aria-live="polite"></p><div class="table-wrap"><table><thead><tr><th>اسم المستخدم التجريبي</th><th>عبارة التحدي التجريبية</th><th>أفضل زمن / المحاولات</th><th>وقت التسجيل</th><th>معرّف العملية</th></tr></thead><tbody id="visits-body"><tr><td colspan="5" class="empty-cell">جارٍ تحميل السجل…</td></tr></tbody></table></div></section>
+    </main>
+    <footer class="footer">نسخة تحدّي محلية · عبارات التحدي غير سرية، وليست كلمات مرور حسابات حقيقية</footer>
+  </div>
+</body>
+</html>

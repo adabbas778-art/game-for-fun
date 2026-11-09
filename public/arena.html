@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تحدّي سرعة الاستجابة في Social Hub — تجربة ترفيهية فقط">
+  <title>Social Hub | Reaction Rush</title>
+  <link rel="stylesheet" href="/style.css"><script src="/arena.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/dashboard.html">◈ <span>Social Hub</span></a>
+      <div class="top-actions"><span class="chip">REACTION RUSH</span><a class="quiet-link" href="/dashboard.html">لوحة المستخدم ←</a></div>
+    </header>
+    <main class="arena-layout">
+      <section class="arena-heading">
+        <span class="eyebrow">LEVEL 01 / SPEED CHALLENGE</span>
+        <h1>قدّيش إنت <em>سريع؟</em> ⚡</h1>
+        <p>اختبر سرعة ردّ فعلك بالميلي ثانية. اضغط «ابدأ الجولة»، انتظر لحد ما تتحول الساحة للأخضر، واضغط فورًا! لا تضغط وهي حمراء.</p>
+        <span class="arena-person">اللاعب: <strong id="arena-handle">—</strong></span>
+      </section>
+      <section class="arena-game panel" aria-labelledby="game-title">
+        <div class="arena-topline"><h2 id="game-title">Reaction Rush</h2><span id="round-state" class="state-label">جاهز للتحدّي</span></div>
+        <button type="button" id="reaction-pad" class="reaction-pad state-idle" disabled aria-describedby="reaction-message">
+          <span class="reaction-symbol" id="reaction-symbol" aria-hidden="true">⚡</span>
+          <strong id="reaction-primary">اختبر سرعتك!</strong>
+          <span id="reaction-secondary">لما تظهر الإشارة الخضراء اضغط بسرعة</span>
+        </button>
+        <div class="arena-action-row">
+          <button id="start-round" class="primary-button" type="button">ابدأ الجولة <span aria-hidden="true">←</span></button>
+          <span class="muted tiny" id="reaction-message" role="status" aria-live="polite">دقّة الوقت مرتبطة بالجهاز والمتصفح.</span>
+        </div>
+        <div class="reaction-stats" aria-label="إحصائيات اللعبة">
+          <div class="reaction-stat"><span>آخر محاولة</span><strong id="last-ms">—</strong></div>
+          <div class="reaction-stat"><span>أسرع نتيجة</span><strong id="best-ms">—</strong></div>
+          <div class="reaction-stat"><span>عدد المحاولات</span><strong id="attempts-count">0</strong></div>
+        </div>
+        <div class="arena-result" id="arena-result" hidden>
+          <span class="section-kicker">YOUR RESULT</span>
+          <h2 id="reaction-title">سرعة ممتازة!</h2>
+          <p id="reaction-review"></p>
+          <p class="muted tiny" id="save-status"></p>
+          <a class="secondary-button" href="/dashboard.html">كمّل إلى صفحتك الشخصية ←</a>
+        </div>
+      </section>
+      <p class="arena-footnote">لعبة تفاعلية  · النتائج محسوبة على جهازك وليست ترتيبًا تنافسيًا موثّقًا ·      .</p>
+    </main>
+    <footer class="footer">Social Hub </footer>
+  </div>
+</body>
+</html>

